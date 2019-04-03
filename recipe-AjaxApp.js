@@ -13,12 +13,35 @@ app.get('/', function (req, res) {
 app.use('/js', express.static('static/js'))
 app.use('/css', express.static('static/css'))
 
-app.get('/agax-GET', function (req, res) {
+app.get('/ajax-GET-list', function (req, res) {
 
-  res.setHeader('Content-Type', 'application/json');
+    //res.setHeader('Content-Type', 'application/json');
+    //console.log(req.query['format']);
+    let formatOfResponse = req.query['format'];
+    let dataList = null;
 
-  let d = new Date();
-  res.send({ meg: d});
+    if(formatOfResponse == 'html-list') {
+
+        res.setHeader('Content-Type', 'text/html');
+        dataList = lists.getHTML();
+        res.send(dataList);
+
+    } else if(formatOfResponse == 'json-list') {
+
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getJSON();
+        res.send(dataList);
+
+    } else {
+        res.send({msg: 'Wrong format!'});
+    }
+});
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(bodyParser.json());
+
+let port = 8000;
+app.listen(port, function () {
+  console.log('Example app listening on port ' + port + '!');
 })
-
-app.get('/ajax-GET-list',)
