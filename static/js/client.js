@@ -19,7 +19,7 @@ $(document).ready(function() {
             }
         });
     });
-
+    /*
     // GET A LIST (RECIPE) FROM SERVER AS HTML (BEEF NOODLE)
     $('#recipes #taiwan').click(function(e) {
         e.preventDefault();
@@ -38,6 +38,7 @@ $(document).ready(function() {
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
         });
     });
+    */
 
     // GET A LIST (RECIPE) FROM SERVER AS JSON (SUSHI)
     $('#recipes #japan').click(function(e) {
@@ -64,7 +65,7 @@ $(document).ready(function() {
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
             }
     });
-
+      /*
     // GET A LIST (RECIPE) FROM SERVER AS JSON (CARBONARA)
     $('#recipes #italy').click(function(e) {
         e.preventDefault();
@@ -90,4 +91,5 @@ $(document).ready(function() {
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
             }
     });
-})
+
+}) */
