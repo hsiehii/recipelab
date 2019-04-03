@@ -8,14 +8,14 @@ module.exports ={
     console.log("called: Soondubu");
     return soondubu;
   },
-  getCarbonara: function() {
+  /* getCarbonara: function() {
     console.log("called: Carbonara");
     return carbonara;
   },
   getJSON: function() {
     console.log("called: Beef");
     return beef;
-  },
+  }, */
   getSushi: function() {
     console.log("called: Sushi");
     return beef;
