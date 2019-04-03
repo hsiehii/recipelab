@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // GET A LIST (RECIPE) FROM SERVER AS HTML (SOONDUBU)
-    $('#recipes #korea').click(function(e) {
+    $('#korea').click(function(e) {
         e.preventDefault();
 
         $.ajax({
@@ -41,7 +41,7 @@ $(document).ready(function() {
     */
 
     // GET A LIST (RECIPE) FROM SERVER AS JSON (SUSHI)
-    $('#recipes #japan').click(function(e) {
+    $('#japan').click(function(e) {
         e.preventDefault();
 
         $.ajax({

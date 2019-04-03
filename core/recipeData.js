@@ -5,7 +5,7 @@ let sushi = ["Rice", "Seaweed", "Cucumber", "Fish"];
 
 module.exports ={
   getHTML: function() {
-    console.log("called: Soondubu");
+    console.log("called: getHTML");
     return soondubu;
   },
   /* getCarbonara: function() {
@@ -16,9 +16,9 @@ module.exports ={
     console.log("called: Beef");
     return beef;
   }, */
-  getSushi: function() {
-    console.log("called: Sushi");
-    return beef;
+  getJSON: function() {
+    console.log("called: getJSON");
+    return sushi;
   }
 
 
