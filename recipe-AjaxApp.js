@@ -1,6 +1,6 @@
 const lists = require('./core/recipeData');
 const express = require('express');
-const bodyParse = require('body-parser');
+const bodyParser = require('body-parser');
 const app = express();
 const { JSDOM } = require('jsdom');
 const fs = require("fs");
