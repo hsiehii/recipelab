@@ -95,6 +95,13 @@ li a{
 
 }
 
+#content {
+    height: 20vh;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+
 
 
 
