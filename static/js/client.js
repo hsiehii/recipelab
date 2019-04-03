@@ -90,6 +90,7 @@ $(document).ready(function() {
                 $("#p1").text(jqXHR.statusText);
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
             }
+            */
     });
 
-}) */
+});
