@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Our Kitchen</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="purrfect.css">
+  </head>
+
+  <body>
+      <div id="topBar">
+
+          <div id="name">
+              <span id="kitchen"><a href="purrfectMatch.html">Gina + Irene's Kitchen</a></span>
+          </div>
+          <div id="nav">
+            <nav id="menu">
+                <ul id = "list">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+          </div>
+
+      </div>
+      <div id="main">
+      <div id="favourite">Our Favourite Foods</div>
+
+      <div id="countries">
+        <div id="menu">
+          <ul>
+            <li>tofu</li>
+            <li>kimchi</li>
+            <li>egg</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="recipes">
+
+        <div class="country" id="korea"><a href="">Korea</a></div>
+        <div class="country" id="taiwan"><a href="">Taiwan</a></div>
+        <div class="country" id="japan"><a href="">Japan</a></div>
+        <div class="country" id="italy"><a href="">Italy</a></div>
+
+      </div>
+        <div id="content">
+            <!-- server content goes here -->
+        </div>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="client.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      var showMenu = false;
+
+      $("#foodkorea").click(function(event){
+        console.log("Soondubu " + event.target);
+        if(!showMenu) {
+          showMenu = true;
+          $("#korea").append("<p>SOONDUBU</p>");
+        }
+        }
+      })
+
+    })
+>>>>>>> 47653dc8d1d2f806577a2f6fad5e0321a5d72872
+
+    <script src="client.js"></script>
+  </body>
+
+
+</html>

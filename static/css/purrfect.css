@@ -1,0 +1,101 @@
+#body {
+    margin: 0pt;
+}
+
+#topBar {
+    height: 20%;
+    width: 100%;
+    background-image: url("nav_bar.jfif");
+    position: relative;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#name {
+    height: 15%;
+    width: 20%;
+}
+
+#kitchen {
+    font-size: 20pt;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#favourite {
+  text-align: center;
+  font-size: 50pt;
+  margin-bottom: 5%;
+}
+
+#recipes {
+  column-count: 4;
+  text-align: center;
+
+}
+
+.country {
+  border: 2px solid black;
+  height: 30vh;
+  border-radius: 25px;
+  color: white;
+  font-size: 30pt;
+}
+
+#main {
+  margin-top: 10%;
+}
+
+#korea {
+  background: url("soondubu.jpg");
+    background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: top;
+
+
+}
+
+#taiwan {
+  background: url("beefNoodle.jpg");
+    background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#japan {
+  background: url("sushi.jpg");
+
+}
+
+#italy {
+  background: url("carbonara.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
