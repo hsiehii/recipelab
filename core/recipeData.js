@@ -1,7 +1,7 @@
-let soondubu = "<ul><li>Tofu</li><li>Kimchi</li><li>Eggs</li></ul>";
-let carbonara = "<ul><li>Fettucini<li><li>Egg Yolk</li><li><li>Cheese</li>";
-let beef = ["Beef Brisket", "Cilantro", "Egg Noodles"];
-let sushi = ["Rice", "Seaweed", "Cucumber", "Fish"];
+let soondubu = "<ul><li>Tofu</li><li>Kimchi</li><li>Eggs</li><li>Pork</li><li>Onions</li></li></ul>";
+let carbonara = "<ul><li>Fettucini<li><li>Egg Yolk</li><li>Cheese</li><li>Olive Oil</li><li>Bacon</li></ul>";
+let beef = ["Beef Brisket", "Cilantro", "Egg Noodles", "Ginger", "Red Chili"];
+let sushi = ["Rice", "Seaweed", "Cucumber", "Fish", "Avocado"];
 
 module.exports ={
   getSDB: function() {

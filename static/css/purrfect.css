@@ -41,12 +41,15 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
+
 
 #favourite {
   text-align: center;
   font-size: 50pt;
   margin-bottom: 5%;
+  font-family: arial;
 }
 
 #recipes {
@@ -61,15 +64,27 @@ li a{
   border-radius: 25px;
   color: white;
   font-size: 30pt;
+  font-family: arial;
 }
 
+.country a{
+  background-color: white;
+  display: block;
+  border-radius: 25px;
+}
 #main {
   margin-top: 10%;
 }
 
+#p1 {
+  text-align: center;
+  font-size: 20pt;
+  font-family: arial;
+}
+
 #korea {
   background: url("soondubu.jpg");
-    background-size: 120%;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: top;
 
@@ -96,12 +111,18 @@ li a{
 }
 
 #content {
-    height: 20vh;
+    height: 30vh;
     width: 100%;
-    background-color: aqua;
+    background-color: lightpink;
     text-align: center;
+    font-family: arial;
+    font-size: 15pt;
 }
 
+#content li {
+  list-style-type: none;
+  line-height: 30pt;
+}
 
 
 
