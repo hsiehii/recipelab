@@ -36,6 +36,7 @@ $(document).ready(function() {
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
         }
     });
+    });
 
 
     // GET A LIST (RECIPE) FROM SERVER AS JSON (SUSHI)
@@ -91,5 +92,5 @@ $(document).ready(function() {
     });
 
 });
-});
+
 });
