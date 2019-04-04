@@ -13,28 +13,40 @@ app.get('/', function (req, res) {
 app.use('/js', express.static('static/js'))
 app.use('/css', express.static('static/css'))
 
-app.get('/ajax-GET-list', function (req, res) {
+app.get('/ajax-GET-korea', function (req, res) {
+    let formatOfResponse = req.query[     'format'];
+    let dataList = null;
 
-    //res.setHeader('Content-Type', 'application/json');
-    //console.log(req.query['format']);
+        res.setHeader('Content-Type', 'text/html');
+        dataList = lists.getSDB();
+        res.send(dataList);
+});
+
+app.get('/ajax-GET-italy', function(req, res){
     let formatOfResponse = req.query['format'];
     let dataList = null;
 
-    if(formatOfResponse == 'html-list') {
-
         res.setHeader('Content-Type', 'text/html');
-        dataList = lists.getHTML();
+        dataList = lists.getCarbonara();
         res.send(dataList);
+});
 
-    } else if(formatOfResponse == 'json-list') {
+app.get('/ajax-GET-taiwan', function(req, res){
+    let formatOfResponse = req.query['format'];
+    let dataList = null;
 
         res.setHeader('Content-Type', 'application/json');
-        dataList = lists.getJSON();
+        dataList = lists.getBeef();
         res.send(dataList);
+});
 
-    } else {
-        res.send({msg: 'Wrong format!'});
-    }
+app.get('/ajax-GET-japan', function(req, res){
+    let formatOfResponse = req.query['format'];
+    let dataList = null;
+
+        res.setHeader('Content-Type', 'application/json');
+        dataList = lists.getSushi();
+        res.send(dataList);
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -5,10 +5,9 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-list",
+            url: "/ajax-GET-korea",
             dataType: "html",
             type: "GET",
-            data: { format: "html-list"},
             success: function(data) {
                 console.log("SUCCESS HTML:", data);
                 $("#content").html(data);
@@ -19,16 +18,15 @@ $(document).ready(function() {
             }
         });
     });
-    /*
-    // GET A LIST (RECIPE) FROM SERVER AS HTML (BEEF NOODLE)
-    $('#recipes #taiwan').click(function(e) {
+
+    // GET A LIST (RECIPE) FROM SERVER AS HTML (CARBONARA)
+    $('#italy').click(function(e) {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-list",
+            url: "/ajax-GET-italy",
             dataType: "html",
             type: "GET",
-            data: { format: "html-list"},
             success: function(data) {
                 console.log("SUCCESS HTML:", data);
                 $("#content").html(data);
@@ -36,19 +34,18 @@ $(document).ready(function() {
             error: function(jqXHR, textStatus, errorThrown) {
                 $("#p1").text(jqXHR.statusText);
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
-        });
+        }
     });
-    */
+
 
     // GET A LIST (RECIPE) FROM SERVER AS JSON (SUSHI)
     $('#japan').click(function(e) {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-list",
+            url: "/ajax-GET-japan",
             dataType: "json",
             type: "GET",
-            data: { format: "json-list"},
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
@@ -65,16 +62,16 @@ $(document).ready(function() {
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
             }
     });
-      /*
-    // GET A LIST (RECIPE) FROM SERVER AS JSON (CARBONARA)
-    $('#recipes #italy').click(function(e) {
+    });
+
+    // GET A LIST (RECIPE) FROM SERVER AS JSON (BEEF NOODLE)
+    $('#taiwan').click(function(e) {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-list",
+            url: "/ajax-GET-taiwan",
             dataType: "json",
             type: "GET",
-            data: { format: "json-list"},
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
@@ -90,7 +87,9 @@ $(document).ready(function() {
                 $("#p1").text(jqXHR.statusText);
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
             }
-            */
+
     });
 
+});
+});
 });
