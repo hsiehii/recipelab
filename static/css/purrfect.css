@@ -113,7 +113,7 @@ li a{
 #content {
     height: 30vh;
     width: 100%;
-    background-color: lightpink;
+    background-image: url("nav_bar.jfif");
     text-align: center;
     font-family: arial;
     font-size: 15pt;
@@ -124,6 +124,8 @@ li a{
   line-height: 30pt;
 }
 
-
+li {
+    color: white;
+}
 
 
