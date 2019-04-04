@@ -5,7 +5,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-korea",
+            url: "/lists",
             dataType: "html",
             type: "GET",
             data: {format: "korea-list"},
@@ -25,7 +25,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-italy",
+            url: "/lists",
             dataType: "html",
             type: "GET",
             data: { format: "italy-list"}
@@ -46,7 +46,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-japan",
+            url: "/lists",
             dataType: "json",
             type: "GET",
             data: { format: "japan-list"}
@@ -73,7 +73,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.ajax({
-            url: "/ajax-GET-taiwan",
+            url: "/lists",
             dataType: "json",
             type: "GET",
             data: { format: "taiwan-list"}

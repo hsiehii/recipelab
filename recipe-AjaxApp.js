@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 app.use('/js', express.static('static/js'))
 app.use('/css', express.static('static/css'))
 
-app.get('/ajax-GET-korea', function (req, res) {
+app.get('/lists', function (req, res) {
     let formatOfResponse = req.query['format'];
     let dataList = null;
 
