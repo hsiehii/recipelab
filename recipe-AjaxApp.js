@@ -14,39 +14,27 @@ app.use('/js', express.static('static/js'))
 app.use('/css', express.static('static/css'))
 
 app.get('/ajax-GET-korea', function (req, res) {
-    let formatOfResponse = req.query[     'format'];
+    let formatOfResponse = req.query['format'];
     let dataList = null;
 
+    if(formatOfResponse == 'korea-list') {
         res.setHeader('Content-Type', 'text/html');
         dataList = lists.getSDB();
         res.send(dataList);
-});
 
-app.get('/ajax-GET-italy', function(req, res){
-    let formatOfResponse = req.query['format'];
-    let dataList = null;
-
+    } else if(formatOfResponse == 'italy-list') {
         res.setHeader('Content-Type', 'text/html');
         dataList = lists.getCarbonara();
         res.send(dataList);
-});
-
-app.get('/ajax-GET-taiwan', function(req, res){
-    let formatOfResponse = req.query['format'];
-    let dataList = null;
-
+    } else if (formatOfResponse == 'taiwan-list') {
         res.setHeader('Content-Type', 'application/json');
         dataList = lists.getBeef();
         res.send(dataList);
-});
-
-app.get('/ajax-GET-japan', function(req, res){
-    let formatOfResponse = req.query['format'];
-    let dataList = null;
-
+    } else if(formatOfResponse == 'japan-list') {
         res.setHeader('Content-Type', 'application/json');
         dataList = lists.getSushi();
         res.send(dataList);
+    }
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));

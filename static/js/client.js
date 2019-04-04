@@ -8,6 +8,7 @@ $(document).ready(function() {
             url: "/ajax-GET-korea",
             dataType: "html",
             type: "GET",
+            data: {format: "korea-list"},
             success: function(data) {
                 console.log("SUCCESS HTML:", data);
                 $("#content").html(data);
@@ -27,6 +28,7 @@ $(document).ready(function() {
             url: "/ajax-GET-italy",
             dataType: "html",
             type: "GET",
+            data: { format: "italy-list"}
             success: function(data) {
                 console.log("SUCCESS HTML:", data);
                 $("#content").html(data);
@@ -47,6 +49,7 @@ $(document).ready(function() {
             url: "/ajax-GET-japan",
             dataType: "json",
             type: "GET",
+            data: { format: "japan-list"}
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
@@ -73,6 +76,7 @@ $(document).ready(function() {
             url: "/ajax-GET-taiwan",
             dataType: "json",
             type: "GET",
+            data: { format: "taiwan-list"}
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
