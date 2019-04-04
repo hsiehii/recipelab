@@ -49,7 +49,7 @@ $(document).ready(function() {
             url: "/lists",
             dataType: "json",
             type: "GET",
-            data: { format: "japan-list"}
+            data: { format: "japan-list"},
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
@@ -76,7 +76,7 @@ $(document).ready(function() {
             url: "/lists",
             dataType: "json",
             type: "GET",
-            data: { format: "taiwan-list"}
+            data: { format: "taiwan-list"},
             success: function(data) {
                 console.log("SUCCESS JSON:", data);
                 var div = $("#content");
