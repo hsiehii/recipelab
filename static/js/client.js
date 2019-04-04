@@ -28,7 +28,7 @@ $(document).ready(function() {
             url: "/lists",
             dataType: "html",
             type: "GET",
-            data: { format: "italy-list"}
+            data: { format: "italy-list"},
             success: function(data) {
                 console.log("SUCCESS HTML:", data);
                 $("#content").html(data);
@@ -36,8 +36,8 @@ $(document).ready(function() {
             error: function(jqXHR, textStatus, errorThrown) {
                 $("#p1").text(jqXHR.statusText);
                 console.log("ERROR:", jqXHR, textStatus, errorThrown);
-        }
-    });
+            }
+        });
     });
 
 
